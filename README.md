@@ -7,8 +7,8 @@
 能源结构等多维度数据以交互式图表形式呈现。
 
 ## 截图
-![首页](screenshot/home.png)
-![图表页](screenshot/main-page.png)
+![首页](carbon-visualization/home.png)
+![图表页](carbon-visualization/main-page.png)
 
 ## 技术栈
 - HTML5 / CSS3 / JavaScript
@@ -31,8 +31,8 @@ presenting multi-dimensional data including carbon emissions and energy
 structure through dynamic charts and responsive layouts.
 
 ## Screenshots
-![Home](screenshots/home.png)
-![Charts](screenshots/main-page.png)
+![Home](carbon-visualization/home.png)
+![Charts](carbon-visualization/main-page.png)
 
 ## Tech Stack
 - HTML5 / CSS3 / JavaScript
