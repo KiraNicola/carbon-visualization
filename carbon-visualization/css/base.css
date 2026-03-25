@@ -1,0 +1,417 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: PingFangSC-Light, 微软雅黑;
+}
+body,html{
+    width: 100%;
+    height: auto;
+    color:#333;
+    /* overflow: hidden;*/
+    background: url('../img/true.png') no-repeat;
+    background-size: 100% 100%;
+}
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+/*清除浮动*/
+.clear-both:before, .clear-both:after {
+    display: table;
+    content: "";
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+}
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+/*header开始*/
+.header{
+    width: 100%;
+    height: 80px;
+    padding:0 20px;
+    min-width: 1366px;
+}
+.bg_header{
+    width: 100%;
+    height: 80px;
+    background: url(../img/title.png) no-repeat;
+    background-size: 100% 100%;
+}
+.header>.header_logo{
+    padding:18px 10px 10px 0px;
+}
+.header>.header_logo>a{
+    display: block;
+}
+.header>.header_logo>a>img{
+    width:260px;
+}
+
+.header>.header_nav{
+    margin-left: 20px;
+}
+.header>.header_nav>ul>li{
+    float: left;
+    margin-right: 6px;
+    position: relative;
+}
+.header>.header_nav>ul>li>a{
+    display: block;
+    height: 80px;
+    padding:0 10px 0 30px;
+    line-height: 80px;
+    color:#fff;
+}
+.header>.header_nav>ul>li>a:hover{
+    border-bottom: 4px solid #4b8df8;
+}
+.header>.header_nav>ul>li>img{
+    float: left;
+    position: absolute;
+    top: 33px;
+    left:10px;
+}
+.header>.header_nav>ul>li>a.nav_current{
+    border-bottom: 4px solid #4b8df8;
+}
+
+.header>.header_myself{
+    width: 90px;
+    text-align: center;
+}
+.header>.header_myself>p{
+    color:#fff;
+    font-size: 13px;
+    margin-top: 15px;
+}
+.header>.header_myself>a{
+    color:#fff;
+    font-size: 13px;
+}
+
+/*content 开始*/
+
+.content{
+    margin: 20px;
+    width: calc(100% - 40px);
+    min-width: 1366px;
+}
+.content>.content_title{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background-color: #4b8df8;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.content>.content_title>p{
+    color:#fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.content>.content_title>img{
+    margin: 10px 10px 0px 10px;
+}
+.content>.content_main{
+    min-width: 1366px;
+}
+.content>.content_main>.content_search>div{
+    margin-right: 25px;
+}
+.content>.content_main>.content_search>div>label{
+    width: 80px;
+    text-align: right;
+}
+.content>.content_main>.content_search>div>select,
+.content>.content_main>.content_search>div>input
+{
+    width: 200px;
+}
+.content>.content_main>.content_table{
+    margin-top: 30px;
+}
+.content>.content_main>.content_table>table{
+    margin-top: 15px;
+}
+.content>.content_main>.content_table>table th:nth-child(1),
+.content>.content_main>.content_table>table td:nth-child(1){
+    width: 50px;
+    text-align: center;
+}
+
+.content>.content_main>.content_page>span {
+    font-size: 12.8px;
+    margin-top: 7px;
+}
+.content>.content_main>.content_page>select{
+    width: 70px;
+    margin-right: 10px;
+}
+/*content 结束*/
+#chart2{
+    height: 100%;
+    width: 100%;
+}
+.tech{
+    position:absolute;
+    bottom:43%;
+    right:10%;
+    top:42%;
+    color:white;
+    font-size: 1.3em;
+    text-align: center;
+    vertical-align: middle;
+    /* border-collapse: collapse; */
+    margin: auto;
+    /* border: 1px solid white; */
+    width: calc(80% - 100px);
+    height: 90%;
+    /* 框的大小 */
+    box-sizing: border-box;
+    border: 1px solid #2C58A6;
+    margin-left: 25px;
+    box-shadow: 0 0 10px #2C58A6;
+    margin-left: 25px;
+}
+
+.tech th{
+
+    text-align: center;
+    padding: 20px 0;
+
+}
+.tech thead th{
+    text-align: center;
+    color: #61d2f7;
+
+}
+
+.tech tbody tr:nth-child(1),
+.tech tbody tr:nth-child(3),
+.tech tbody tr:nth-child(5),
+.tech tbody tr:nth-child(7),
+.tech tbody tr:nth-child(9),
+.tech tbody tr:nth-child(11),
+.tech tbody tr:nth-child(13)
+{
+    background-color: #072951;
+    box-shadow:-10px 0px 15px #2C58A6 inset,   /*左边阴影*/
+    10px 0px 15px #2C58A6 inset;  /*右边阴影*/
+}
+
+.origin{
+    position:absolute;
+    bottom:43%;
+    right:10%;
+    top:42%;
+    color:white;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+    /* border-collapse: collapse; */
+    margin: auto;
+    /* border: 1px solid white; */
+    width: calc(80% - 100px);
+    height: 90%;
+    /* 框的大小 */
+    box-sizing: border-box;
+    border: 1px solid #2C58A6;
+    margin-left: 25px;
+    box-shadow: 0 0 10px #2C58A6;
+    margin-left: 25px;
+}
+
+.origin th{
+    /* border: 1px solid #999; */
+    text-align: center;
+    padding: 20px 0;
+
+}
+.origin thead th{
+    text-align: center;
+    color: #61d2f7;
+
+}
+
+.origin tbody tr:nth-child(1),
+.origin tbody tr:nth-child(3),
+.origin tbody tr:nth-child(5),
+.origin tbody tr:nth-child(7),
+.origin tbody tr:nth-child(9)
+{
+    background-color: #072951;
+    box-shadow:-10px 0px 15px #2C58A6 inset,   /*左边阴影*/
+    10px 0px 15px #2C58A6 inset;  /*右边阴影*/
+}
+
+.promise{
+    position:absolute;
+    bottom:43%;
+    right:10%;
+    top:42%;
+    color:white;
+    font-size: 1.3em;
+    text-align: center;
+    vertical-align: middle;
+    /* border-collapse: collapse; */
+    margin: auto;
+    /* border: 1px solid white; */
+    width: calc(80% - 100px);
+    height: 90%;
+    /* 框的大小 */
+    box-sizing: border-box;
+    border: 1px solid #2C58A6;
+    margin-left: 25px;
+    box-shadow: 0 0 10px #2C58A6;
+    margin-left: 25px;
+}
+
+.promise th{
+    /* border: 1px solid #999; */
+    text-align: center;
+    padding: 20px 0;
+
+}
+.promise thead th{
+    text-align: center;
+    color: #61d2f7;
+
+}
+
+.promise tbody tr:nth-child(1),
+.promise tbody tr:nth-child(3),
+.promise tbody tr:nth-child(5),
+.promise tbody tr:nth-child(7),
+.promise tbody tr:nth-child(9),
+.promise tbody tr:nth-child(11),
+.promise tbody tr:nth-child(13)
+{
+    background-color: #072951;
+    box-shadow:-10px 0px 15px #2C58A6 inset,   /*左边阴影*/
+    10px 0px 15px #2C58A6 inset;  /*右边阴影*/
+}
+
+.stand{
+    position:absolute;
+    bottom:43%;
+    right:10%;
+    top:42%;
+    color:white;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+    /* border-collapse: collapse; */
+    margin: auto;
+    /* border: 1px solid white; */
+    width: calc(80% - 100px);
+    height: 90%;
+    /* 框的大小 */
+    box-sizing: border-box;
+    border: 1px solid #2C58A6;
+    margin-left: 25px;
+    box-shadow: 0 0 10px #2C58A6;
+    margin-left: 25px;
+}
+
+.stand th{
+    /* border: 1px solid #999; */
+    text-align: center;
+    padding: 20px 0;
+
+}
+.stand thead th{
+    text-align: center;
+    color: #61d2f7;
+
+}
+
+.stand tbody tr:nth-child(1),
+.stand tbody tr:nth-child(3),
+.stand tbody tr:nth-child(5),
+.stand tbody tr:nth-child(7),
+.stand tbody tr:nth-child(9),
+.stand tbody tr:nth-child(11),
+.stand tbody tr:nth-child(13)
+{
+    background-color: #072951;
+    box-shadow:-10px 0px 15px #2C58A6 inset,   /*左边阴影*/
+    10px 0px 15px #2C58A6 inset;  /*右边阴影*/
+}
+
+
+
+
+/* .left_1{
+    position:absolute;
+    left:8%;
+    top:10%;
+} */
+button{
+    /* margin-right:5rem; */
+    width: 400px;
+    height:80px;
+
+    position:absolute;
+    left: 1%;
+    bottom: 10%;
+    text-align: center;
+    vertical-align: middle;
+}
+.backgr{
+    background-image: url(../earth.gif);
+    position:absolute;
+    bottom:43%;
+    right:10%;
+    height: 8.2em;
+}
+.conclude{
+    position:absolute;
+    bottom:43%;
+    right:10%;
+    top:10%;
+    color:white;
+    text-align: left;
+    vertical-align: middle;
+    margin: 5%;
+    z-index: 9999;
+}
+.conclude p{
+    font-size: 2em;
+    font-family:黑体;
+} 
+.bgc{
+    position:absolute;
+    right:8%;
+    top:8%;
+    width: 60em;
+    height: 35em;
+}
+#chart_20{
+    background-color: #000;
+}
+
+

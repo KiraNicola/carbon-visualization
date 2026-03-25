@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>碳中和科普室</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .t_btn {
+            margin-top: 20px;
+        }
+        .t_btn li {
+            display:inline-block;
+            margin: 0 0px 20px 20px;
+        }
+        .t_btn button,
+        .t_a {
+            display: inline-block;
+            padding: 10px 5px;
+            width: 80px;
+            border-style: solid;
+            border-width: 0;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: bold;
+            line-height: normal;
+            margin: 0 0 0.5em 0;
+            position: relative;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            font-size: 1em;
+            background-color: #2C58A6;
+            border-color: #0263ff;
+            color: white;
+            box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset !important;
+            margin-right: 0.5em;
+            border-radius: 4px;
+        }
+        .t_height {
+            line-height: 80px;
+            position: absolute;
+            right: 28px;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!--header-->
+    <div class="header">
+        <div class="bg_header">
+            <div class="header_nav fl t_title">
+                碳中和科普室
+            </div> 
+        </div>
+        <div class="header_nav fl">
+        </div>
+        <div class="header_myself fr t_height">
+            <a class="t_a" href="../index.html">退出菜单 &nbsp;</a>
+        </div>
+    </div>
+    <!--main-->
+    <div class="data_content">
+        <div class="data_main">
+            <div class="main_left fl">
+                <div class="left_1">
+                    <ul class="t_btn">
+                        <li>
+                            <button class="t_btn0" width=100px;>中国二氧化碳排放总体情况</button>
+                        </li>
+                        <li>
+                            <button class="t_btn3">温室气体排放来源</button>
+                        </li>
+                        <li>
+                            <button class="t_btn14">CO<sub>2</sub>排放量趋势</button>
+                        </li>
+                        <li>
+                            <button class="t_btn13">碳中和排放路径</button>
+                        </li>
+                        <li>
+                            <button class="t_btn2">碳排放情况预期</button>
+                        </li>
+                        <li>
+                            <button class="t_btn4">各煤电国碳中和承诺</button>
+                        </li>
+                        <li>
+                            <button class="t_btn1">碳中和重点技术</button>
+                        </li>
+                        <li>
+                            <button class="t_btn6">碳工业技术构成表</button>
+                        </li>
+                        <li>
+                            <button class="t_btn7">2030年碳排放量预测</button>
+                        </li>
+                        <li>
+                            <button class="t_btn5">结语</button>
+                            
+                        </li>
+                        <!-- <li>
+                            <button class="t_btn8">11</button>
+                        </li>
+                        <li>
+                            <button class="t_btn9">12</button>
+                        </li>
+                        <li>
+                            <button class="t_btn10">13</button>
+                        </li>
+                        <li>
+                            <button class="t_btn11">14</button>
+                        </li>
+                        <li>
+                            <button class="t_btn12">15</button>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="left_2" style="display:none">
+                    <div class="main_title">
+                        湖南省地图
+                    </div>
+                </div>
+            </div>
+            <div class="main_center fl">
+                <div class="center_text t_cos0">
+                    <!--左上边框-->
+                    <div class="t_line_box">
+                        <i class="t_l_line"></i> 
+                        <i class="l_t_line"></i> 
+                    </div> 
+                    <!--右上边框-->
+                    <div class="t_line_box">
+                        <i class="t_r_line"></i> 
+                        <i class="r_t_line"></i> 
+                    </div> 
+                    <!--左下边框-->
+                    <div class="t_line_box">
+                        <i class="l_b_line"></i> 
+                        <i class="b_l_line"></i> 
+                    </div> 
+                        <!--右下边框-->
+                    <div class="t_line_box">
+                        <i class="r_b_line"></i> 
+                        <i class="b_r_line"></i> 
+                    </div>
+                    <div class="main_title">
+                         中国2019年二氧化碳排放统计图
+                    </div>
+                    <div id="chart_map" style="width:100%;height:778px;"></div>
+                </div>
+                <div class="center_text t_cos1" style="display:none">
+                    <!--左上边框-->
+                    <div class="t_line_box">
+                        <i class="t_l_line"></i> 
+                        <i class="l_t_line"></i> 
+                    </div> 
+                    <!--右上边框-->
+                    <div class="t_line_box">
+                        <i class="t_r_line"></i> 
+                        <i class="r_t_line"></i> 
+                    </div> 
+                    <!--左下边框-->
+                    <div class="t_line_box">
+                        <i class="l_b_line"></i> 
+                        <i class="b_l_line"></i> 
+                    </div> 
+                        <!--右下边框-->
+                        <div class="t_line_box">
+                        <i class="r_b_line"></i> 
+                        <i class="b_r_line"></i> 
+                    </div>
+                    <div class="main_title">
+                        碳中和十大重点技术
+                    </div>
+                  <div id="chart_2" class="chart" style="width:100%;height:778px;"></div>
+                  <div class="main_table t_btn8">
+                    <table class="tech">
+                        <thead>
+                        <tr>
+                            <!-- <th>序号</th> -->
+                            <th>技术名称</th>
+                            <th>主要技术</th> 
+                            <th>关键应用</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <!-- <td>1</td> -->
+                            <td>煤炭地下气化</td>
+                            <td>智能导向钻井、气化通道等</td>
+                            <td>煤炭清洁化开发利用</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>2</td> -->
+                            <td>中低熟页岩油原位开采</td>
+                            <td>智能导向钻井、电加热、高效催化剂等</td>
+                            <td>中低成熟度页岩油与富油煤原位开采</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>3</td> -->
+                            <td>CCUS/CCS</td>
+                            <td>CO<sub>2</sub>捕集、CO<sub>2</sub>利用、CO<sub>2</sub>封存</td>
+                            <td>CO<sub>2</sub>驱油、CO<sub>2</sub>生产化学品、消除“黑碳”</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>4</td> -->
+                            <td>氢能与燃料电池</td>
+                            <td>电解水制氢、氢气储存与运输、燃料电池</td>
+                            <td>交通、工业、电子、建筑</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>5</td> -->
+                            <td>生物光伏发电</td>
+                            <td>水生物技术、微生物光电转换技术、催化剂</td>
+                            <td>交通运输、发电</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>5</td> -->
+                            <td>天基太阳能发电</td>
+                            <td>太阳能发电、微波束能源传输</td>
+                            <td>电力</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>5</td> -->
+                            <td>光储智能微网</td>
+                            <td>光伏与储能一体化技术、智能微网技术</td>
+                            <td>局部区域电力供应</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>5</td> -->
+                            <td>超级储能</td>
+                            <td>全固态电池、钙钛矿电池、锂-空气电池</td>
+                            <td>交通、应急电力供应</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>5</td> -->
+                            <td>可控核聚变</td>
+                            <td>离子体的控制技术、聚变堆材料、巨变堆包层</td>
+                            <td>交通、电力</td>
+                        </tr>
+                        <tr>
+                            <!-- <td>5</td> -->
+                            <td>智慧能源互联网</td>
+                            <td>电力电子技术、信息技术、智能管理、柔性配电网</td>
+                            <td>智能电网、综合能源供应</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                    
+                <div class="center_text t_cos2" style="display:none">
+                    <!--左上边框-->
+                    <div class="t_line_box">
+                        <i class="t_l_line"></i> 
+                        <i class="l_t_line"></i> 
+                    </div> 
+                    <!--右上边框-->
+                    <div class="t_line_box">
+                        <i class="t_r_line"></i> 
+                        <i class="r_t_line"></i> 
+                    </div> 
+                    <!--左下边框-->
+                    <div class="t_line_box">
+                        <i class="l_b_line"></i> 
+                        <i class="b_l_line"></i> 
+                    </div> 
+                        <!--右下边框-->
+                        <div class="t_line_box">
+                        <i class="r_b_line"></i> 
+                        <i class="b_r_line"></i> 
+                    </div>
+                    <div class="main_title">
+                        2018至2060年碳排放情况预期成果
+                    </div>
+                    <div id="chart_0" class="chart" style="width:100%;height:778px;"></div>
+                </div>
+                <div class="center_text t_cos3" style="display:none">
+                    <!--左上边框-->
+                    <div class="t_line_box">
+                        <i class="t_l_line"></i> 
+                        <i class="l_t_line"></i> 
+                    </div> 
+                    <!--右上边框-->
+                    <div class="t_line_box">
+                        <i class="t_r_line"></i> 
+                        <i class="r_t_line"></i> 
+                    </div> 
+                    <!--左下边框-->
+                    <div class="t_line_box">
+                        <i class="l_b_line"></i> 
+                        <i class="b_l_line"></i> 
+                    </div> 
+                        <!--右下边框-->
+                        <div class="t_line_box">
+                        <i class="r_b_line"></i> 
+                        <i class="b_r_line"></i> 
+                    </div>
+                    <div class="main_title">
+                        2018年全球温室气体排放来源
+                    </div>
+                    <div id="chart_4" class="chart" style="width:100%;height:778px;"></div>
+                </div>
+                <div class="center_text t_cos4" style="display:none">
+                    <!--左上边框-->
+                    <div class="t_line_box">
+                        <i class="t_l_line"></i> 
+                        <i class="l_t_line"></i> 
+                    </div> 
+                    <!--右上边框-->
+                    <div class="t_line_box">
+                        <i class="t_r_line"></i> 
+                        <i class="r_t_line"></i> 
+                    </div> 
+                    <!--左下边框-->
+                    <div class="t_line_box">
+                        <i class="l_b_line"></i> 
+                        <i class="b_l_line"></i> 
+                    </div> 
+                        <!--右下边框-->
+                        <div class="t_line_box">
+                        <i class="r_b_line"></i> 
+                        <i class="b_r_line"></i> 
+                    </div>
+                    <div class="main_title">
+                        结语
+                    </div>
+                    <div id="chart_20" class="chart" style="width:100%;height:778px;"></div>
+                    <div class="bg">
+                        <img class = "bgc" src="../earth.gif" alt="#">
+                    </div>
+                    <div class="conclude" >
+                        <p>绿水青山就是金山银山。生态兴则文明兴，生态衰则文明衰。</p>
+                        <p>碳中和是一场从能源革命到产业嬗变的深刻变革，是我们正经历的伟大事件，</p>
+                        <p>碳中和从概念到引发能源变革，从引发产业变革到社会经济变革，是人类经济社会发展进步的必然，是实现高质量发展的要求，是推动构建人类命运共同体的必然选择。</p>
+                        <p>打赢碧水蓝天保卫战，实现碳达峰、碳中和目标，需要全社会经济体系、能源体系、技术体系等转型升级，需要公众践行绿色低碳生活方式。</p>
+                        <p>绿色，是永恒的美，环境保护是我们不变的追求。</p>
+                    </div>
+                </div>
+                <div class="center_text t_cos5" style="display:none">
+                    <!--左上边框-->
+                    <div class="t_line_box">
+                        <i class="t_l_line"></i> 
+                        <i class="l_t_line"></i> 
+                    </div> 
+                    <!--右上边框-->
+                    <div class="t_line_box">
+                        <i class="t_r_line"></i> 
+                        <i class="r_t_line"></i> 
+                    </div> 
+                    <!--左下边框-->
+                    <div class="t_line_box">
+                        <i class="l_b_line"></i> 
+                        <i class="b_l_line"></i> 
+                    </div>
+                        <!--右下边框-->
+                        <div class="t_line_box">
+                        <i class="r_b_line"></i> 
+                        <i class="b_r_line"></i> 
+                    </div>
+                    <div class="main_title">
+                        碳工业技术构成表
+                    </div>
+                    <div id="chart_3" class="chart" style="width:100%;height:778px;"></div>
+                    <div class="main_table t_btn2">
+                        <table class="origin">
+                            <thead>
+                            <tr>
+                                <th>碳来源</th>
+                                <th>“灰碳”利用</th>
+                                <th>“黑碳”消除</th>
+                                <th>碳经济与政策</th>
+                               <!--<th>5</th>--> 
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>能源消费</td>
+                                <td>二氧化碳生产化工产品</td>
+                                <td>二氧化碳捕集</td>
+                                <td>碳税制度</td>
+                                <!--<td>5</td>-->
+                            </tr>
+                            <tr>
+                                <td>农林用地</td>
+                                <td>二氧化碳人工绿色转化</td>
+                                <td>二氧化碳分离</td>
+                                <td>碳交易制度</td>
+                                <!--<td>5</td>-->
+                            </tr>
+                            <tr>
+                                <td>土地利用</td>
+                                <td>二氧化碳地质驱油</td>
+                                <td>二氧化碳运输</td>
+                                <td>复合碳排放权交易体系</td>
+                                <!--<td>5</td>-->
+                            </tr>
+                            <tr>
+                                <td>垃圾排放</td>
+                                <td>林业、海洋和土壤碳汇</td>
+                                <td>二氧化碳地质封存</td>
+                                <td>财政补贴</td>
+                                <!--<td>5</td>-->
+                            </tr>
+                            <!--<tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                            </tr>-->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div class="center_text t_cos6" style="display:none">
+                    <!--左上边框-->
+                    <div class="t_line_box">
+                        <i class="t_l_line"></i> 
+                        <i class="l_t_line"></i> 
+                    </div> 
+                    <!--右上边框-->
+                    <div class="t_line_box">
+                        <i class="t_r_line"></i> 
+                        <i class="r_t_line"></i> 
+                    </div> 
+                    <!--左下边框-->
+                    <div class="t_line_box">
+                        <i class="l_b_line"></i> 
+                        <i class="b_l_line"></i> 
+                    </div> 
+                        <!--右下边框-->
+                        <div class="t_line_box">
+                        <i class="r_b_line"></i> 
+                        <i class="b_r_line"></i> 
+                    </div>
+                    <div class="main_title">
+                        各煤电国碳中和承诺
+                    </div>
+                    <div id="chart_6" class="chart" style="width:100%;height:778px;"></div>
+                    <div class="main_table t_btn8">
+                        <table class="promise">
+                            <thead>
+                            <tr>
+                                <th>国家</th>
+                                <th>煤电发电量</th>
+                                <th>碳中和承诺</th> 
+                                <th>目标年</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>中国</td>
+                                <td>50.20%</td>
+                                <td>是</td>
+                                <td>2060</td>
+                            </tr>
+                            <tr>
+                                <td>印度</td>
+                                <td>11.00%</td>
+                                <td>—</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>美国</td>
+                                <td>10.60%</td>
+                                <td>—</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>日本</td>
+                                <td>3.10%</td>
+                                <td>是</td>
+                                <td>2050</td>
+                            </tr>
+                            <tr>
+                                <td>韩国</td>
+                                <td>2.50%</td>
+                                <td>是</td>
+                                <td>2050</td>
+                            </tr>
+                            <tr>
+                                <td>南非</td>
+                                <td>2.20%</td>
+                                <td>是</td>
+                                <td>2050</td>
+                            </tr>
+                            <tr>
+                                <td>德国</td>
+                                <td>1.90%</td>
+                                <td>是</td>
+                                <td>2050</td>
+                            </tr>
+                            <tr>
+                                <td>俄罗斯</td>
+                                <td>1.80%</td>
+                                <td>—</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>印度尼西亚</td>
+                                <td>1.80%</td>
+                                <td>—</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>澳大利亚</td>
+                                <td>1.60%</td>
+                                <td>—</td>
+                                <td>—</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                   
+                <div class="center_text t_cos7" style="display:none">
+                    <!--左上边框-->
+                    <div class="t_line_box">
+                        <i class="t_l_line"></i> 
+                        <i class="l_t_line"></i> 
+                    </div> 
+                    <!--右上边框-->
+                    <div class="t_line_box">
+                        <i class="t_r_line"></i> 
+                        <i class="r_t_line"></i> 
+                    </div> 
+                    <!--左下边框-->
+                    <div class="t_line_box">
+                        <i class="l_b_line"></i> 
+                        <i class="b_l_line"></i> 
+                    </div> 
+                        <!--右下边框-->
+                        <div class="t_line_box">
+                        <i class="r_b_line"></i> 
+                        <i class="b_r_line"></i> 
+                    </div>
+                    <div class="main_title">
+                        2030年碳排放量预测
+                    </div>
+                    <div id="chart_7" class="chart" style="width:100%;height:778px;"></div>
+                    <div class="main_table t_btn3">
+                        <table class="stand">
+                            <thead>
+                            <tr>
+                                <th>指标</th>
+                                <th>2018年</th>
+                                <th>2020年</th>
+                                <th>2025年峰值</th>
+                                <th>2030年</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>能源二氧化碳排放</td>
+                                <td>95.3</td>
+                                <td>98.4</td>
+                                <td>106.2</td>
+                                <td>101.4</td>
+                            </tr>
+                            <tr>
+                                <td>工业过程等其他二氧化碳排放</td>
+                                <td>7.8</td>
+                                <td>8.0</td>
+                                <td>8.6</td>
+                                <td>8.2</td>
+                            </tr>
+                            <tr>
+                                <td>其他非二氧化碳温室气体排放</td>
+                                <td>20.5</td>
+                                <td>21.8</td>
+                                <td>23.5</td>
+                                <td>22.4</td>
+                            </tr>
+                            <tr>
+                                <td>总排放</td>
+                                <td>123.6</td>
+                                <td>128.2</td>
+                                <td>138.4</td>
+                                <td>132.0</td>
+                            </tr>
+                            <!--<tr>
+                                <td>负排放</td>
+                                <td>-6.5</td>
+                                <td>-7.0</td>
+                                <td>-8.0</td>
+                                <td>-9.4</td>
+                            </tr>-->
+                            <tr>
+                                <td>静排放</td>
+                                <td>117.1</td>
+                                <td>121.2</td>
+                                <td>130.4</td>
+                                <td>122.6</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="center_text t_cos13" style="display:none">
+                    <!--左上边框-->
+                    <div class="t_line_box">
+                        <i class="t_l_line"></i> 
+                        <i class="l_t_line"></i> 
+                    </div> 
+                    <!--右上边框-->
+                    <div class="t_line_box">
+                        <i class="t_r_line"></i> 
+                        <i class="r_t_line"></i> 
+                    </div> 
+                    <!--左下边框-->
+                    <div class="t_line_box">
+                        <i class="l_b_line"></i> 
+                        <i class="b_l_line"></i> 
+                    </div> 
+                        <!--右下边框-->
+                        <div class="t_line_box">
+                        <i class="r_b_line"></i> 
+                        <i class="b_r_line"></i> 
+                    </div>
+                    <div class="main_title">
+                        碳中和排放路径
+                    </div>
+                    <div id="chart_13" class="chart" style="width:100%;height:778px; cursor: pointer;"></div>
+                </div>
+                <div class="center_text t_cos14" style="display:none">
+                    <!--左上边框-->
+                    <div class="t_line_box">
+                        <i class="t_l_line"></i> 
+                        <i class="l_t_line"></i> 
+                    </div> 
+                    <!--右上边框-->
+                    <div class="t_line_box">
+                        <i class="t_r_line"></i> 
+                        <i class="r_t_line"></i> 
+                    </div> 
+                    <!--左下边框-->
+                    <div class="t_line_box">
+                        <i class="l_b_line"></i> 
+                        <i class="b_l_line"></i> 
+                    </div> 
+                        <!--右下边框-->
+                        <div class="t_line_box">
+                        <i class="r_b_line"></i> 
+                        <i class="b_r_line"></i> 
+                    </div>
+                    <div class="main_title">
+                        中国1990至2020年CO<sub>2</sub>排放量趋势图
+                    </div>
+                    <div id="chart_14" class="chart" style="width:100%;height:778px; cursor: pointer;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+    <script src="../js/jquery-2.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=NxHjDyHIPgITv4N8VK9wZfOIXplLK6xl"></script>
+    <script src="../js/echarts.min.js"></script>
+    <script src="../js/dataTool.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/china.js"></script>
+    <script src="../js/hunan.js"></script>
+    <script src="../js/bmap.js"></script>
+    <script src="../js/echarts-all.js"></script>
+
+<!-- 3D earth -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+<!-- Uncomment this line if you want to dataTool extension -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/extension/dataTool.min.js"></script>
+
+<!-- Uncomment this line if you want to use gl extension -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+
+<!-- Uncomment this line if you want to echarts-stat extension -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+
+<!-- Uncomment this line if you want to use map -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+
+<!-- Uncomment these two lines if you want to use bmap extension -->
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=NxHjDyHIPgITv4N8VK9wZfOIXplLK6xl"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/extension/bmap.min.js"></script>
+
+<!-- end -->
+</html>
