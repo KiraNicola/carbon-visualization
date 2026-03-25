@@ -17,7 +17,7 @@
 - ECharts（数据可视化）
 
 ## 在线预览
-[[点击查看](https://KiraNicola.github.io/carbon-visualization)](https://github.com/KiraNicola/carbon-visualization/blob/main/carbon-visualization/first.html)
+[点击查看](https://KiraNicola.github.io/carbon-visualization)
 
 ## 本地运行
 直接用浏览器打开 first.html 即可
@@ -41,7 +41,7 @@ structure through dynamic charts and responsive layouts.
 - ECharts — interactive data visualization
 
 ## Live Demo
-[[View Online](https://KiraNicola.github.io/carbon-visualization)](https://github.com/KiraNicola/carbon-visualization/blob/main/carbon-visualization/first.html)
+[点击查看](https://KiraNicola.github.io/carbon-visualization)
 
 ## Run Locally
 Simply open `first.html` in any browser — no build step required.
